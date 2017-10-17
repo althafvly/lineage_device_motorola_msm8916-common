@@ -44,3 +44,11 @@ LOCAL_SRC_FILES := atomic.cpp
 LOCAL_MODULE := libshim_atomic
 LOCAL_MODULE_CLASS := SHARED_LIBRARIES
 include $(BUILD_SHARED_LIBRARY)
+
+include $(CLEAR_VARS)
+LOCAL_SRC_FILES := SensorManager.cpp moto_camera_misc.c
+LOCAL_SHARED_LIBRARIES := libutils libsensor liblog libbinder
+LOCAL_MODULE := libshim_sensorlistener
+LOCAL_MODULE_TAGS := optional
+
+include $(BUILD_SHARED_LIBRARY)

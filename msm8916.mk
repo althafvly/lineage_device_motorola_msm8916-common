@@ -88,7 +88,8 @@ PRODUCT_PACKAGES += \
     libbson \
     libc_util \
     libshims_camera \
-    libshim_atomic
+    libshim_atomic \
+    libshim_sensorlistener
 
 # CMActions
 PRODUCT_PACKAGES += \
