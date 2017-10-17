@@ -36,7 +36,8 @@ include $(CLEAR_VARS)
 
 LOCAL_SRC_FILES := \
     sensorlistener/ISensorServer.cpp \
-    sensorlistener/SensorManager.cpp
+    sensorlistener/SensorManager.cpp \
+    moto_camera_misc.c
 
 LOCAL_MODULE := libshims_sensorlistener
 LOCAL_MODULE_TAGS := optional
